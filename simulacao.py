@@ -154,7 +154,7 @@ def Encomenda_thread(id, info):
         mutex.release()
         dormir()
         mutex.acquire()
-    file = open(f'Rastreios/Rastreio_Encomenda-{id}', 'w')
+    file = open(f'Rastreio_Encomenda-{id}', 'w')
     file.write(Encomendas[id].strEncomenda())
     file.close()
     mutex.release()
